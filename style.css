@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html , body{
+    width: 100%;
+    height: 100%;
+}
+:root{
+    --Verydarkblue1: hsl(217, 54%, 11%);
+    --Verydarkblue2: hsl(216, 50%, 16%);
+    --Verydarkblue3: hsl(215, 32%, 27%);
+   --White: hsl(0, 0%, 100%);
+   --Softblue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+}
+body{
+    font-family: 'Outfit', sans-serif;
+    font-size: 13px;
+    background-color: var(--Verydarkblue1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0;
+}
+.contenedor{
+    width: 374px;
+    height: 602px;
+    border-radius: 2%;
+    background-color: var(--Verydarkblue2);
+    padding: 24px;
+}
+.contenedor_imagen{
+    background-image: url(./images/image-equilibrium.jpg);
+    border-radius: 2%;
+    width: 320px;
+    height: 300px;
+    background-size: cover;
+    margin:auto;
+}
+.ver{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 2%;
+    background-color:rgba(62, 249, 255, 0.281);  
+    visibility: hidden;
+}
+.contenedor_titulo{
+    color: var(--White);
+    padding: 27px 0;
+    font-weight: 600;
+}
+.contenedor_parrafo{
+    color: var(--Softblue);
+    font-size: 18px;
+    padding-bottom: 27px;
+    font-weight: 300;
+
+}
+.contenido{
+    display: flex;
+    justify-content: space-between;
+}
+.presio{
+    padding-left: 5%;
+    color: var(--Cyan);
+    font-size: 18px;
+    background-image: url(./images/icon-ethereum.svg);
+    background-repeat: no-repeat;
+    padding-bottom: 20px;
+    align-items: center;
+}
+.hora{
+    background-image: url(./images/icon-clock.svg);
+    background-repeat: no-repeat;
+    padding-left: 7%;
+    font-size: 18px;
+    color: var(--Softblue);
+    align-items: center;
+}
+.creador{
+    padding-top: 10px;
+    display: flex;
+    width: 100%;
+    height: 70px;
+    align-items: center;
+}
+.imagen{
+    background-image: url(./images/image-avatar.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50%; 
+    border: 1px solid white;
+    width: 40px;
+    height: 40px;
+}
+.parrafo{
+    display: flex;
+    color: var(--White);
+    font-size: 18px;
+    text-align: center;
+    padding-left: 5%;
+}
+span{
+    color: var(--Softblue);
+}
+.contenedor_imagen:hover .ver{
+    visibility: visible;
+}
+.parrafo:hover{
+    color: var(--Cyan);
+}
+.contenedor_titulo:hover{
+    color: var(--Cyan);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+@media (min-width: 1440px) {
+    body {
+      padding: 130px 0;
+    }
+  }
